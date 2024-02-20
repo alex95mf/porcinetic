@@ -1,25 +1,25 @@
-<main>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+<main id="inicio" class="">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between custom-navbar">
     <div class="container">
       <!-- Primera sección a la izquierda -->
       <div class="navbar-brand" style="width: 28%;">
-        <a class="text-decoration-none custom-brand" href="app.component.html">Porcinetic</a>
+        <a class="text-decoration-none custom-brand font-weight-bold fs-3 text-danger" href="#inicio">Porcinetic</a>
       </div>
 
       <!-- Segunda sección - Navbar existente sin el elemento de redes sociales -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
+            <a class="nav-link" href="#inicio">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Productos</a>
+            <a class="nav-link" href="#productos">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre nosotros</a>
+            <a class="nav-link" href="#sobre-empresa">Sobre nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contáctanos</a>
+            <a class="nav-link" href="#contacto">Contáctanos</a>
           </li>
         </ul>
       </div>
@@ -40,4 +40,188 @@
       </div>
     </div>
   </nav>
+
+  <!-- Sección de portada -->
+  <div id="inicio" class="py-1 bg-light">
+    <div class="container-fluid p-0">
+      <img src="assets/portada-cerdo.jpg" alt="Portada" class="img-fluid w-100 h-auto">
+    </div>
+  </div>
+
+  <!-- Sección de productos -->
+  <div id="productos" class="py-5">
+    <div class="container">
+      <h3 class="text-uppercase mb-4 text-secondary text-center">Nuestros productos</h3>
+      <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Producto 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="assets/producto1.jpg" class="card-img-top" alt="Producto 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Cerdo Real</h5>
+                    <p class="card-text">Una raza de cerdo robusta y resistente, ideal para la cría al aire libre. Su
+                      carne es jugosa y de sabor intenso, muy apreciada en la gastronomía local.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Producto 2 -->
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="assets/producto2.jpg" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Cerdo Elegante</h5>
+                    <p class="card-text">Una raza de cerdo de aspecto refinado y elegante, criada tradicionalmente en
+                      granjas familiares. Su carne tierna y suave es perfecta para platos gourmet.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Producto 3 -->
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="assets/producto3.jpg" class="card-img-top" alt="Producto 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Cerdo Aventurero</h5>
+                    <p class="card-text">Una raza de cerdo curiosa y activa, que disfruta explorando su entorno. Su
+                      carne magra y sabrosa es ideal para platos saludables y llenos de energía.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Producto 4 -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="assets/producto4.jpg" class="card-img-top" alt="Producto 4">
+                  <div class="card-body">
+                    <h5 class="card-title">Cerdo Rústico</h5>
+                    <p class="card-text">Una raza de cerdo resistente y adaptable, criada en condiciones rurales. Su
+                      carne de textura firme y sabor auténtico es perfecta para platos tradicionales.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Producto 5 -->
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="assets/producto5.jpg" class="card-img-top" alt="Producto 5">
+                  <div class="card-body">
+                    <h5 class="card-title">Cerdo Exótico</h5>
+                    <p class="card-text">Una raza de cerdo única y peculiar, originaria de tierras lejanas. Su carne
+                      exótica y aromática es ideal para explorar nuevas y emocionantes recetas.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Espacio adicional para el diseño del Carousel -->
+              <div class="col-md-4"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Flechas de navegación -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sobre Porcinetic -->
+  <div id="sobre-empresa" class="py-5 bg-light">
+    <div class="container">
+      <div class="row gx-5">
+        <!-- Div izquierdo con título y texto -->
+        <div class="col-md-6 text-center">
+          <h3 class="text-uppercase mb-4 text-secondary">SOBRE PORCINETIC</h3>
+          <p class="mb-4" style="margin-inline: 1rem;">Empresa de cerdos para crianza y venta con más de 10 años en el
+            mercado ecuatoriano.</p>
+          <p>Somos líderes en la industria porcina y ofrecemos productos de alta calidad.</p>
+          <p>Nuestra misión es proporcionar alimentos de calidad y contribuir al desarrollo sostenible del sector
+            porcino en Ecuador.</p>
+        </div>
+        <!-- Div derecho con la foto -->
+        <div class="col-md-6">
+          <img src="assets/sobre-empresa.jpg" alt="Sobre Porcinetic" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de contacto -->
+  <div id="contacto" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <!-- Div izquierdo para información y redes sociales -->
+        <div class="col-md-6">
+          <h2 class="text-uppercase mb-4">Contáctanos</h2>
+          <!-- Información de contacto -->
+          <p>Información de nuestros productos</p>
+          <hr>
+          <!-- Redes sociales -->
+          <div class="d-flex justify-content-start mb-3">
+            <a href="https://www.linkedin.com" class="btn btn-lg"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com" class="btn btn-lg"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" class="btn btn-lg"><i class="fab fa-instagram"></i></a>
+          </div>
+          <!-- Dirección de la empresa -->
+          <p>Dirección de la empresa</p>
+        </div>
+
+        <!-- Div derecho para el formulario -->
+        <div class="col-md-6">
+          <!-- <h2 class="text-center mb-4">Formulario de Contacto</h2> -->
+          <form>
+            <!-- Nombre -->
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <!-- Dirección -->
+            <div class="mb-3">
+              <label for="direccion" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="direccion" required>
+            </div>
+            <!-- Correo Electrónico y Teléfono -->
+            <div class="row">
+              <div class="mb-3 col">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3 col">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" required>
+              </div>
+            </div>
+            <!-- Asunto -->
+            <div class="mb-3">
+              <label for="asunto" class="form-label">Asunto</label>
+              <input type="text" class="form-control" id="asunto" required>
+            </div>
+            <!-- Mensaje -->
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+            </div>
+            <!-- Botón Enviar -->
+            <div class="text-end"> <!-- Añadido -->
+              <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
+
+<footer class="py-3 bg-light text-center">
+  <div class="container">
+    <p>2024 - Porcinetic SA | Todos los derechos reservados</p>
+  </div>
+</footer>
